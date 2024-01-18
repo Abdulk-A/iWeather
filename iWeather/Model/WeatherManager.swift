@@ -18,7 +18,7 @@ import Foundation
 class WeatherManager {
     func getWeatherByCity(for city: String) async throws -> OpenWeather {
         //MAKE SURE TO PUT AN API KEY AFTER APPID TO MAKE THIS FUNCTION WORK
-        guard let url = URL(string: "https://api.openweathermap.org/data/2.5/weather?q=\(city)&appid=87224519965341d81858bdebace3e684") else {
+        guard let url = URL(string: "https://api.openweathermap.org/data/2.5/weather?q=\(city)&appid=" <-paste here) else {
             fatalError("could not load url for \(city)")
         }
         
